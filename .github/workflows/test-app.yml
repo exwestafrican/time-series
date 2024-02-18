@@ -20,6 +20,10 @@ jobs:
         uses: gradle/actions/setup-gradle@v3
       - name: See file path
         run:  ls
+      - name: Move into project
+        run: cd time-series
+      - name: See file path again
+        run: ls
       - name: Build with Gradle
         run:  gradle clean build
       - name: Run Gradle Test
