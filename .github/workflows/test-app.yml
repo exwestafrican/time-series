@@ -19,7 +19,7 @@ jobs:
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
       - name: See file path
-        run:  echo pwd
+        run:  pwd
       - name: Build with Gradle
         run:  gradle clean build
       - name: Run Gradle Test
