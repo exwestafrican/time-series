@@ -18,10 +18,10 @@ jobs:
           architecture: x64
       - name: Setup Gradle
         uses: gradle/actions/setup-gradle@v3
-      - name: Grant execute permission for gradlew
-        run:  chmod +x gradlew
+      - name: See file path
+        run:  echo pwd
       - name: Build with Gradle
-        run: ./gradlew clean build
+        run:  gradle clean build
       - name: Run Gradle Test
-        run: ./gradlew test
+        run:  gradle test
 
