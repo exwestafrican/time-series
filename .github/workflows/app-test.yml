@@ -24,4 +24,3 @@ jobs:
         run:  gradle clean build
       - name: Run Gradle Test
         run:  gradle test
-
