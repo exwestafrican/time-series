@@ -17,9 +17,9 @@ jobs:
           distribution: 'corretto'
           architecture: x64
       - name: Setup Gradle
-        uses: gradle/actions/setup-gradle@417ae3ccd767c252f5661f1ace9f835f9654f2b5 # v3.1.0
+        uses: gradle/gradle-build-action@v3
       - name: Build with Gradle
-        run: ./time-series/gradlew build
+        run: ./gradlew build
       - name: Run Gradle Test
-        run: ./time-series/gradlew test
+        run: ./gradlew test
 
